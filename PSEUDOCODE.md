@@ -10,3 +10,6 @@ CD into friends and run yarn add axios react-router-dom or npm install --save ax
 
 Step 4
 CD into friends and run yarn start or npm start to fire up your React Dev Server. - Done
+
+Step 5
+Inside your React application, create a component to display the list of friends coming from the server.
