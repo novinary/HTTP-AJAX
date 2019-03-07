@@ -17,18 +17,20 @@ Inside your React application, create a component to display the list of friends
 - Create a component called FriendList under components folder - Done
 - Import FriendList and axios into App.js - Done
 - Pass axios and FriendList logic into App.js to display the list of friends - Done
-- Add some css styling to FriendContainer class in App.css - Done
+- Add some css styling to FriendContainer class in App.css. 
 
 Step 6
 Add a form to gather information about a new friend.
-- Create a new FriendForm class component
-
+- Create a new FriendForm class component - Done
+- Import FriendForm into App.js - Done
+- Pass FriendForm logic into App.js to display the form - Done
+- Add some styling to the form. Copied css styling from this site: https://codepen.io/Bergability/pen/ByqyOP - Done
 
 Step 7
-Add a button to save the new friend by making a POST request to the same endpoint listed above.
+Save the new friend by making a POST request to the same endpoint listed above. - Done
 
 Step 8
-Each friend should have the properties listed below.
+Each friend should have the properties listed below. - Done
 
 Step 9
 Implement Update and Delete functionality.

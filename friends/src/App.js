@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import FriendList from "./components/FriendList";
 import axios from "axios";
+import FriendForm from "./components/FriendForm";
 
 class App extends Component {
   constructor(props) {
@@ -11,13 +12,22 @@ class App extends Component {
     };
   }
 
+  handleFriendListChange = friends => {
+    this.setState({
+      friends
+    });
+  };
+
+  // hook into the componentDidMount lifecycle hook and
+  // perform a GET request
   componentDidMount() {
     axios
-      // axios.get. and now we are logging the
-      // response we are receiving from the axios call.
+      //  Requests data from a specified resource
       .get("http://localhost:5000/friends")
-      // response is the response we get back from the server
-      // in react we set the state of our component with the data that we get back from the request.
+
+      // Using axios.get(url) we then get a promise which returns a response
+      // As we’re looking for the response data, we’ve assigned the value of person
+      // to res.data.
       .then(res => this.setState({ friends: res.data }));
   }
 
@@ -25,6 +35,7 @@ class App extends Component {
     return (
       <div className="container">
         <FriendList friends={this.state.friends} />
+        <FriendForm updateFriendList={this.handleFriendListChange} />
       </div>
     );
   }
