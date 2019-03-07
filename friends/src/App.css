@@ -31,3 +31,13 @@
     transform: rotate(360deg);
   }
 }
+
+.FriendContainer {
+  border: 2px solid red;
+	padding: 10px;
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin: 5px;
+  width: 30%;
+  font: Georgia;
+}
